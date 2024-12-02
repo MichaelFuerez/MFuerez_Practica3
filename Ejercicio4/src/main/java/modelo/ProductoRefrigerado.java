@@ -13,15 +13,17 @@ public class ProductoRefrigerado {
     private String fechaEnvasado;
     private double temperaturaMantenimiento;
     private String paisOrigen;
-    
-    public ProductoRefrigerado(String fechaCaducidad, int numeroLote, String codigoSupervision, String fechaEnvasado, double temperaturaMantenimiento, String paisOrigen) {
-        super(fechaCaducidad, numeroLote);
+
+    public ProductoRefrigerado(String string, int par, String orG123, String string1, double par1, String argentina) {
+    }
+
+    public ProductoRefrigerado(String codigoSupervision, String fechaEnvasado, double temperaturaMantenimiento, String paisOrigen) {
         this.codigoSupervision = codigoSupervision;
         this.fechaEnvasado = fechaEnvasado;
         this.temperaturaMantenimiento = temperaturaMantenimiento;
         this.paisOrigen = paisOrigen;
     }
-
+    
     public String getCodigoSupervision() {
         return codigoSupervision;
     }
@@ -58,8 +60,9 @@ public class ProductoRefrigerado {
     @Override
     public String toString() {
         return super.toString() + ", Producto Refrigerado [Código de Supervisión=" + codigoSupervision +
-                ", Fecha de Envasado=" + fechaEnvasado + ", Temperatura de Mantenimiento=" + temperaturaMantenimiento +
-                ", País de Origen=" + paisOrigen + "]";
+                ", Fecha de Envasado=" + fechaEnvasado + 
+                ", Temperatura de Mantenimiento=" + temperaturaMantenimiento +
+                ", País de Origen=" + paisOrigen ;
     }
     
 }
