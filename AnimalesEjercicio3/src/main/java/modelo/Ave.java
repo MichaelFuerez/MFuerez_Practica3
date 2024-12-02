@@ -8,10 +8,13 @@ package modelo;
  *
  * @author HP
  */
-public class Mamifero extends Animal {
-    public Mamifero(String nombre) {
-        super(nombre, "Mamifero");
+public class Ave extends Oviparo {
+    public Ave(String nombre) {
+        super(nombre);
     }
-   
-    
+
+    @Override
+    public void hacerSonido() {
+        System.out.println("El ave hace un canto.");
+    }
 }

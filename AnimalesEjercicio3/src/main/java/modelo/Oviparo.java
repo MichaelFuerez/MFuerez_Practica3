@@ -8,10 +8,9 @@ package modelo;
  *
  * @author HP
  */
-public class Mamifero extends Animal {
-    public Mamifero(String nombre) {
-        super(nombre, "Mamifero");
+public class Oviparo extends Animal {
+    public Oviparo(String nombre) {
+        super(nombre, "Oviparo");
     }
-   
     
 }
