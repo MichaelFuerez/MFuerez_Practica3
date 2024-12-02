@@ -9,11 +9,20 @@ package modelo;
  * @author HP
  */
 class Administrador extends Empleado {
+    private String nombre;
+    private String correo;
+    private String telefono;
+    private String jefe;
     private String puesto;
+    private String departamento;
     
     public Administrador(String nombre, String correo, String telefono, String jefe, String cargo, String puesto) {
         super(nombre, correo, telefono, jefe, cargo);
+        this.nombre = nombre;
+        this.correo = correo;
+        this.telefono = telefono;
         this.puesto = puesto;
+        this.departamento = departamento;
         
         
     }
@@ -29,6 +38,11 @@ class Administrador extends Empleado {
     @Override
     public String toString() {
         return super.toString() +
-                ",Puesto" + puesto;
+                ",NOmbre" + nombre +
+                ",Correo" + correo +
+                ",Telefono" + telefono +
+                ",Jefe" + jefe +
+                ",Puesto" + puesto +
+                ",Departamento" + departamento;
     }
 }
